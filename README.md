@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Imgly Background Removal Tool
+
+This project is a web application that allows users to remove the background from images using a drag-and-drop interface. It is built with Next.js, Tailwind CSS, and uses the `@imgly/background-removal` library for background removal.
+
+## Features
+
+- Drag-and-drop image upload
+- Background removal directly in the browser
+- Download the processed image
+- Responsive and modern UI with Tailwind CSS
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js
+- Yarn or npm
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    ```bash
+    git clone https://github.com/jacksonkasi1/imgly-bg-remove-poc.git
+    cd imgly-bg-remove-poc
+    ```
 
-## Learn More
+2. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    yarn install
+    # or
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Run the development server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ```bash
+    yarn dev
+    # or
+    npm run dev
+    ```
 
-## Deploy on Vercel
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `pages/`: Contains the main page component.
+- `components/`: Contains the `Header` and `ImageUpload` components.
+- `utils/`: Contains the `backgroundRemoval` helper function.
+- `styles/`: Contains global styles and Tailwind CSS configurations.
+
+## Usage
+
+1. Drag and drop an image into the designated area or click to select a file.
+2. Wait for the background removal process to complete.
+3. Download the processed image.
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [@imgly/background-removal](https://github.com/imgly/background-removal)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any changes.
+
+## Acknowledgements
+
+- Special thanks to the developers of `@imgly/background-removal` for their amazing library.
